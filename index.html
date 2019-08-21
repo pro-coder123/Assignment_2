@@ -2,10 +2,12 @@
 <html>
     <head>
         <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/960_12_col.css">
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/text.css">
+        <link href="https://fonts.googleapis.com/css?family=Neuton&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Days+One&display=swap" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
@@ -16,21 +18,23 @@
         <link rel="stylesheet" href="css/style.css" type="text/css">
         <title>Home</title>
     </head>
-    <body style="margin-right: 0px">
+    <body style="margin-right: 0px;padding-right: 0px;">
         
             <!-- <header> -->
                 <!--  -->
                 <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
-
-
                         <span class="navbar-text">
                                 <h1 class="jumbotron" style="font-size: 50px;color: black;">
                                         Stackroute
                                     </h1>
                               </span>
+                              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                              </button>
                     <!-- Links -->
-                    <ul class="navbar-nav" style="padding-left: 200px;">
-                      <li class="nav-item">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto" >
+                      <li class="nav-item active">
                         <a class="nav-link" href="#">Home</a>
                       </li>
                       <li class="nav-item">
@@ -54,18 +58,103 @@
                                           My  Profile
                                         </button>
                                         <div class="dropdown-menu">
-                                          <a class="dropdown-item" href="#">Login</a>
-                                          <a class="dropdown-item" href="#">Sign up</a>
+                                        <button type="button" class="btn nav-link dropdown-toggle" data-toggle="modal" data-target="#login" style="color: black;">
+                                            Login
+                                            </button>
+                                            <button type="button" class="btn nav-link dropdown-toggle" data-toggle="modal" data-target="#signup" style="color: black;">
+                                                    Sign up
+                                                    </button>
                                           <a class="dropdown-item" href="#">Contact us</a>
                                         </div>
                                       </div>
 
                         </li>
                     </ul>
-                  
+                </div>
                   </nav>
-                    
+                  <div class="modal" id="login">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                      
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                              <h4 class="modal-title">Login</h4>
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                      
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                    <div class="container">
+                                
+                                            <form action="#">
+                                              <div class="form-group">
+                                                <label for="email">Email:</label>
+                                                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                                              </div>
+                                              <div class="form-group">
+                                                <label for="pwd">Password:</label>
+                                                <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+                                              </div>
+                                              <div class="form-group form-check">
+                                                <label class="form-check-label">
+                                                  <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                                                </label>
+                                              </div>
+                                              <button type="submit" class="btn btn-primary">Submit</button>
+                                            </form>
+                                          </div>
+                            </div>
+                      
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+                      
+                          </div>
+                        </div>
+                      </div>   
+                      <div class="modal" id="signup">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                          
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                  <h4 class="modal-title">Sign up</h4>
+                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                          
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                        <div class="container">
+                                    
+                                                <form action="#">
+                                                  <div class="form-group">
+                                                    <label for="email">Email:</label>
+                                                    <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                                                  </div>
+                                                  <div class="form-group">
+                                                    <label for="pwd">Password:</label>
+                                                    <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+                                                  </div>
+                                                  <div class="form-group">
+                                                        <label for="pwd">Confirm Password:</label>
+                                                        <input type="password" class="form-control" id="pwd" placeholder="Confirm password" name="pswd">
+                                                      </div>
+                                                  <button type="submit" class="btn btn-primary">Submit</button>
+                                                </form>
+                                              </div>
+                                </div>
+                          
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                          
+                              </div>
+                            </div>
+                          </div>           
             <!-- </header> -->
+        
         <div id="demo" class="carousel slide" data-ride="carousel">
 
             <!-- Indicators -->
@@ -96,16 +185,46 @@
               <span class="carousel-control-next-icon"></span>
             </a>
           </div>
-        
-    <div class="container_12">
-        <section class="down grid_6">
-          <p>  Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum corrupti commodi illo omnis ullam! Harum fugiat nemo maxime laboriosam soluta voluptates eius natus expedita doloribus quae in iste, quisquam molestiae!</p>
-        </section>
-        <section class="grid_6">
-            <section class="grid_6 one"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dolores eius cum labore minima et suscipit quaerat nostrum debitis ea rerum deserunt nesciunt omnis, minus quas officiis beatae explicabo itaque.</p></section>
-            <section class="grid_6 two"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dolores eius cum labore minima et suscipit quaerat nostrum debitis ea rerum deserunt nesciunt omnis, minus quas officiis beatae explicabo itaque.</p></section>
-            <section class="grid_6 three"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dolores eius cum labore minima et suscipit quaerat nostrum debitis ea rerum deserunt nesciunt omnis, minus quas officiis beatae explicabo itaque.</p></section>
-        </section>
+    
+
+          <ul class="nav nav-tabs" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="tab" href="#home">Why Stackroute?</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#menu1">What do we do?</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#menu2">Our locations</a>
+                </li>
+              </ul>
+            
+              <div class="tab-content">
+                <div id="home" class="container tab-pane active"><br>
+                  <h3>Why Stackroute?</h3>
+                  <p>Programming has many levels, but there are not many who can handle them all. As one of the best programming bootcamps in the world, StackRoute®'s goal is to produce the world's best full-stack programmers.</p>
+                </div>
+                <div id="menu1" class="container tab-pane fade"><br>
+                  <h3>What do we do?</h3>
+                  <p>We teach people, but are not a training shop. We take tough, large scale problems and solve them continuously. We build stuff like complex event processing engines, massive scale multiplayer games, graph and ontology based text search engines. StackRoute® is therefore apprenticeship at its best.</p>
+                </div>
+                <div id="menu2" class="container tab-pane fade"><br>
+                  <h3>Our locations</h3>
+                  <p>Bangalore, Chennai</p>
+                </div>
+              </div>     
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-5 zero"> It's a place where our student mentors imbibe the inspiration to fuel innovation in the classroom. In other words, it's a think-tank cum incubator of ideas within StackRoute®</div>
+    
+            <div class="col-lg-5 one">Skills and talent development major NIIT on Friday announced the launch of StackRoute, an initiative to create the best programmers for the startup industry. Speaking at the launch, NIIT Chief Executive Officer Rahul Patwardhan said, “There is an acute shortage of talent in the startup sector...</div>
+</div>
+<div class="row">
+        <div class="col-lg-5 two"> </div>
+            <div class="col-lg-5 two">NIIT Limited, a global leader in skills and talent development, today unveiled a first-of-its-kind programme to address the versatile talent requirements of the fast growing start-up sector -StackRouteTM, an NIIT initiative to produce the world’s best full stack programmers...</div></div>
+            <div class="row">
+                    <div class="col-lg-5 two"> </div>
+            <div class="col-lg-5 three">Aims to create versatile technology specialists for the new age start-up industry and the changing manpower needs of the IT...</div></div>
     </div>
     <footer class="bottom">
         <article class="bleft">
