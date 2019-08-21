@@ -1,0 +1,114 @@
+<<<<<<< HEAD
+h1{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 12mm;
+    float: left;
+    padding-right: 500px;    
+}
+.top{
+    /* overflow: auto; */
+    width:100%;
+    background-color: beige;
+    padding-bottom: 0px;
+    position: fixed;
+}
+.top ul li{
+    display: inline-block;
+    margin-left: 40px;
+    padding-top: 25px;
+}
+.top a{
+    text-decoration: none;
+    font-family: 'Economica', sans-serif;
+    font-size: 25px;
+}
+.top a:hover{
+    color: black;
+    text-decoration: underline;
+}
+.top aside{
+    float: left;
+    padding-left 50px;
+}
+.main{
+    padding-top: 80px;
+    margin-left: 10px;
+}
+.sub p{
+    margin-left: 100px;
+    margin-top: 100px;
+    font-family: 'Mate SC', serif;
+    font-size: 60px;
+}
+.side{
+    /* margin-left: 50px; */
+    margin-right: 5px;
+    padding-right: 0px;
+}
+.side img{
+    width: 250px;
+    margin-left: 150px;
+    padding-right: 0px;
+}
+.content img{
+width: 100%;
+height: 10%; 
+
+}
+.down{
+    background-color: darkturquoise;
+    margin: none;
+    overflow: hidden;
+}
+.right{
+    padding: none;
+    margin: none;
+    background-color: crimson;
+    width: 40%;
+    overflow: hidden;
+}
+.one{
+    background-color:black;
+    color: white;
+    margin-left: 30px;
+    overflow: hidden;
+}
+.two{
+    margin-left: 30px;
+    overflow: hidden;
+}
+.three{
+    margin-left: 30px;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+.bottom{
+
+        overflow: hidden;
+        
+        
+}
+.bleft{
+    padding-left: 40px;
+    width: 100%;
+    color: black;
+    overflow: hidden;
+    padding-right: 0px;
+    padding-left: 40px;
+    margin-top:50px;
+}
+.bleft p{
+
+
+    font-family: 'Days One', sans-serif;
+    text-align: right;
+    margin-right: 560px;
+
+}
+.bright{
+    float: left;
+}
+=======
+h1{font-family:'Roboto Condensed',sans-serif;font-size:12mm;float:left;padding-right:500px}.top{overflow:auto;width:100%;background-color:beige;padding-bottom:0;position:fixed}.top ul li{display:inline-block;margin-left:40px;padding-top:25px}.top a{text-decoration:none;font-family:Economica,sans-serif;font-size:25px}.top a:hover{color:#000;text-decoration:underline}.top aside{float:left}.sub p{margin-left:100px;margin-top:100px;font-family:'Mate SC',serif;font-size:60px}.side{margin-right:5px;padding-right:0}.side img{width:250px;margin-left:150px;padding-right:0}.content img{width:100%;height:10%}.down{background-color:#00ced1;margin:none;overflow:hidden}.right{padding:none;margin:none;background-color:#dc143c;width:40%;overflow:hidden}.one{background-color:#000;color:#fff;margin-left:30px;overflow:hidden}.two{margin-left:30px;overflow:hidden}.three{margin-left:30px;background-color:#000;color:#fff;overflow:hidden}.bottom{overflow:hidden}.bleft{padding-left:40px;width:100%;color:#000;overflow:hidden;padding-right:0;padding-left:40px;margin-top:50px}.bleft p{font-family:'Days One',sans-serif;text-align:right;margin-right:560px}.bright{float:left}
+>>>>>>> 1f3de09fbb459c504d9fc5b6a765f82b4ba92aac
